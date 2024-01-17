@@ -1,7 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
+import React,{ useState } from 'react';
 import './App.css';
-import UseContext from './components/useContext';
+import Hookstask from "./components/Hookstask"
 
 export const ToggleTheme = React.createContext()
 
@@ -16,7 +15,7 @@ function App() {
   return (
     <ToggleTheme.Provider value={state}>
       <button onClick={handleToggle}>Toggle</button>
-      <UseContext/>
+      <Hookstask/>
     </ToggleTheme.Provider>
   );
 }

@@ -1,4 +1,3 @@
-
 import { useContext } from "react";
 import { ToggleTheme } from "../App";
 
@@ -18,4 +17,4 @@ function UseContext(){
   )
 }
 
-export default UseContext; 
+export default UseContext;

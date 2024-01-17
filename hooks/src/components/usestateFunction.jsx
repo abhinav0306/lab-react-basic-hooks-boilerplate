@@ -1,15 +1,12 @@
 
 import { useState } from "react";
-import { useEffect } from "react";
+import "../App.css"
+
 
 function UseState(){
 
   const [currAge, setAge] = useState(19);
   const [currSib, setSib] = useState(3);
-
-  useEffect(()=>{
-    alert(`something changed ${currAge}`)
-  },[currAge])
 
   return(
     <div>
@@ -22,6 +19,5 @@ function UseState(){
   )
 
 }
-
 
 export default UseState;
